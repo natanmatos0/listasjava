@@ -6,6 +6,9 @@ public class Ave extends  Animal{
 
 
     public void voar(){
-        System.out.println("A ave " + getNome() + " voou");
+        System.out.println("A ave " + getaNome() + " voou");
     }
+
+
+
 }

@@ -5,7 +5,7 @@ public class Mamifero extends Animal{
     }
 
 
-    public void amamentar(){
-        System.out.println("O animal " + getNome() + " está amamentando");
-    }
+    public void amamentar(){System.out.println("O animal " + getaNome() + " está amamentando");}
+
+
 }

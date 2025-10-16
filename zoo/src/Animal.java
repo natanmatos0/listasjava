@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Animal {
@@ -6,9 +8,12 @@ public class Animal {
     private String nome;
     private String especie;
     private int numPatas;
+    private static List<String> listaAnimais = new ArrayList<>();
 
-    public Animal(String nome, String especie, int numPatas){
-        this.nome = nome;
+
+    public Animal(String anome, String especie, int numPatas){
+        this.nome = anome;
+        listaAnimais.add(nome);
 
         while (true) {
             if (especie.equalsIgnoreCase("mamifero") ||
@@ -62,7 +67,7 @@ public class Animal {
         this.numPatas=numPatas;
     }
 
-    public String getNome(){
+    public String getaNome(){
         return this.nome;
     }
 
@@ -72,6 +77,10 @@ public class Animal {
 
     public int getNumPatas(){
         return this.numPatas;
+    }
+
+    public static List<String> getListaAnimais() {
+        return listaAnimais;
     }
 
     public void emitirSom() {
